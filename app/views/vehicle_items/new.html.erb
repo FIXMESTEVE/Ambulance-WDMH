@@ -1,2 +1,29 @@
 <h1>VehiculeItems#new</h1>
 <p>Find me in app/views/vehicule_items/new.html.erb</p>
+<div id='cameraStream'></div>
+
+<%= content_for :after_js do %>
+<script>
+  Quagga.init({
+    inputStream : {
+      name : "Live",
+      type : "LiveStream",
+      target: document.querySelector('#cameraStream')    // Or '#yourElement' (optional)
+    },
+    decoder: {
+      readers: ["code_128_reader"]
+  }
+  }, function(err) {
+      if (err) {
+          console.log(err);
+          return
+      }
+      console.log("Initialization finished. Ready to start");
+      Quagga.start();
+
+      Quagga.onDetected(function(data){
+        console.log(data.codeResult.code);
+      })
+  });
+</script>
+<% end %>
