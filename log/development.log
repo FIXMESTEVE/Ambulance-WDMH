@@ -3923,3 +3923,147 @@ Processing by VehiculesController#show as HTML
 Completed 200 OK in 887ms (Views: 877.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/vehicules/1" for 127.0.0.1 at 2017-10-14 17:10:20 +0200
+Processing by VehiculesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering vehicules/show.html.erb within layouts/application
+  Rendered vehicules/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 811ms (Views: 801.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicules/1" for 127.0.0.1 at 2017-10-14 17:10:35 +0200
+Processing by VehiculesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1380ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `find_vehicule' for #<VehiculesController:0x007fefe48e24f8>
+Did you mean?  find_vehicle):
+  
+app/controllers/vehicules_controller.rb:8:in `show'
+Started GET "/vehicules/1" for 127.0.0.1 at 2017-10-14 17:10:40 +0200
+Processing by VehiculesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicule Load (0.8ms)[0m  [1m[34mSELECT  "vehicules".* FROM "vehicules" WHERE "vehicules"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 68ms (ActiveRecord: 5.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Vehicule with 'id'=):
+  
+app/controllers/vehicules_controller.rb:22:in `find_vehicle'
+app/controllers/vehicules_controller.rb:8:in `show'
+Started GET "/vehicules/1" for 127.0.0.1 at 2017-10-14 17:10:42 +0200
+Processing by VehiculesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicule Load (0.9ms)[0m  [1m[34mSELECT  "vehicules".* FROM "vehicules" WHERE "vehicules"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 74ms (ActiveRecord: 5.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Vehicule with 'id'=):
+  
+app/controllers/vehicules_controller.rb:22:in `find_vehicle'
+app/controllers/vehicules_controller.rb:8:in `show'
+Started GET "/vehicules/1" for 127.0.0.1 at 2017-10-14 17:10:52 +0200
+Processing by VehiculesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicule Load (0.9ms)[0m  [1m[34mSELECT  "vehicules".* FROM "vehicules" WHERE "vehicules"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Vehicule Load (0.2ms)[0m  [1m[34mSELECT  "vehicules".* FROM "vehicules" WHERE "vehicules"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicules/show.html.erb within layouts/application
+  Rendered vehicules/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 844ms (Views: 661.3ms | ActiveRecord: 28.8ms)
+
+
+Started GET "/vehicules/1" for 127.0.0.1 at 2017-10-14 17:11:10 +0200
+Processing by VehiculesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicule Load (0.8ms)[0m  [1m[34mSELECT  "vehicules".* FROM "vehicules" WHERE "vehicules"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Vehicule Load (0.2ms)[0m  [1m[34mSELECT  "vehicules".* FROM "vehicules" WHERE "vehicules"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicules/show.html.erb within layouts/application
+  Rendered vehicules/show.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 11.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"vehicule_items", :id=>"1"}, missing required keys: [:vehicule_id]):
+    2:   <div class="row">
+    3:     <div class="col-12 text-center">
+    4:       <h1>Etat de mon stock</h1>
+    5:       <%= link_to new_vehicule_vehicule_item_path, class: "btn btn-primary btn-lg" do %>
+    6:         Scanner <i class="fa fa-camera fa-fw"></i>
+    7:       <% end %>
+    8:       <p>ou</p>
+  
+app/views/vehicules/show.html.erb:5:in `_app_views_vehicules_show_html_erb___2587696618762828291_70334154520540'
+Started GET "/vehicules/1" for 127.0.0.1 at 2017-10-14 17:11:35 +0200
+Processing by VehiculesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicule Load (0.9ms)[0m  [1m[34mSELECT  "vehicules".* FROM "vehicules" WHERE "vehicules"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Vehicule Load (0.3ms)[0m  [1m[34mSELECT  "vehicules".* FROM "vehicules" WHERE "vehicules"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicules/show.html.erb within layouts/application
+  Rendered vehicules/show.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"vehicule_items", :id=>"1"}, missing required keys: [:vehicule_id]):
+    2:   <div class="row">
+    3:     <div class="col-12 text-center">
+    4:       <h1>Etat de mon stock</h1>
+    5:       <%= link_to new_vehicule_vehicule_item_path, class: "btn btn-primary btn-lg" do %>
+    6:         Scanner <i class="fa fa-camera fa-fw"></i>
+    7:       <% end %>
+    8:       <p>ou</p>
+  
+app/views/vehicules/show.html.erb:5:in `_app_views_vehicules_show_html_erb___2587696618762828291_70334157388560'
+Started GET "/vehicules/1" for 127.0.0.1 at 2017-10-14 17:12:28 +0200
+Processing by VehiculesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicule Load (0.8ms)[0m  [1m[34mSELECT  "vehicules".* FROM "vehicules" WHERE "vehicules"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Vehicule Load (0.3ms)[0m  [1m[34mSELECT  "vehicules".* FROM "vehicules" WHERE "vehicules"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicules/show.html.erb within layouts/application
+  Rendered vehicules/show.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 5.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"vehicule_items", :id=>"1"}, missing required keys: [:vehicule_id]):
+    2:   <div class="row">
+    3:     <div class="col-12 text-center">
+    4:       <h1>Etat de mon stock</h1>
+    5:       <%= link_to new_vehicule_vehicule_item_path, class: "btn btn-primary btn-lg" do %>
+    6:         Scanner <i class="fa fa-camera fa-fw"></i>
+    7:       <% end %>
+    8:       <p>ou</p>
+  
+app/views/vehicules/show.html.erb:5:in `_app_views_vehicules_show_html_erb___2587696618762828291_70333996578940'
+Started GET "/vehicules/1" for 127.0.0.1 at 2017-10-14 17:13:27 +0200
+Processing by VehiculesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicule Load (1.1ms)[0m  [1m[34mSELECT  "vehicules".* FROM "vehicules" WHERE "vehicules"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Vehicule Load (0.2ms)[0m  [1m[34mSELECT  "vehicules".* FROM "vehicules" WHERE "vehicules"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicules/show.html.erb within layouts/application
+  [1m[36mVehiculeItem Load (1.4ms)[0m  [1m[34mSELECT "vehicule_items".* FROM "vehicule_items" WHERE "vehicule_items"."vehicule_id" = $1[0m  [["vehicule_id", 1]]
+  [1m[36mItem Load (1.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mItem Load (1.0ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered vehicules/show.html.erb within layouts/application (245.8ms)
+Completed 200 OK in 1070ms (Views: 1022.5ms | ActiveRecord: 19.5ms)
+
+
+Started GET "/vehicules/1" for 127.0.0.1 at 2017-10-14 17:13:30 +0200
+Processing by VehiculesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicule Load (1.0ms)[0m  [1m[34mSELECT  "vehicules".* FROM "vehicules" WHERE "vehicules"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Vehicule Load (0.2ms)[0m  [1m[34mSELECT  "vehicules".* FROM "vehicules" WHERE "vehicules"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicules/show.html.erb within layouts/application
+  [1m[36mVehiculeItem Load (1.0ms)[0m  [1m[34mSELECT "vehicule_items".* FROM "vehicule_items" WHERE "vehicule_items"."vehicule_id" = $1[0m  [["vehicule_id", 1]]
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mItem Load (1.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mItem Load (1.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered vehicules/show.html.erb within layouts/application (84.6ms)
+Completed 200 OK in 906ms (Views: 873.0ms | ActiveRecord: 5.3ms)
+
+
