@@ -1,8 +1,8 @@
-class CreateVehiculeItems < ActiveRecord::Migration[5.1]
+class CreateVehicleItems < ActiveRecord::Migration[5.1]
   def change
-    create_table :vehicule_items do |t|
+    create_table :vehicle_items do |t|
       t.references :item, foreign_key: true
-      t.references :vehicule, foreign_key: true
+      t.references :vehicle, foreign_key: true
       t.integer :quantity
       t.boolean :optionnal
       t.text :comment

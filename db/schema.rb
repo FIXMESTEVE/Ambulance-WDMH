@@ -10,15 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171014095703) do
+ActiveRecord::Schema.define(version: 20171014152844) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "items", force: :cascade do |t|
     t.string "name"
+    t.date "expire_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "locations", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "mission_type_items", force: :cascade do |t|
+    t.bigint "item_id"
+    t.bigint "mission_type_id"
+    t.integer "quantity"
+    t.boolean "required"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["item_id"], name: "index_mission_type_items_on_item_id"
+    t.index ["mission_type_id"], name: "index_mission_type_items_on_mission_type_id"
   end
 
   create_table "mission_types", force: :cascade do |t|
@@ -33,30 +51,35 @@ ActiveRecord::Schema.define(version: 20171014095703) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "vehicule_items", force: :cascade do |t|
+  create_table "vehicle_items", force: :cascade do |t|
     t.bigint "item_id"
-    t.bigint "vehicule_id"
+    t.bigint "vehicle_id"
     t.integer "quantity"
     t.boolean "optionnal"
     t.text "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["item_id"], name: "index_vehicule_items_on_item_id"
-    t.index ["vehicule_id"], name: "index_vehicule_items_on_vehicule_id"
+    t.bigint "location_id"
+    t.index ["item_id"], name: "index_vehicle_items_on_item_id"
+    t.index ["location_id"], name: "index_vehicle_items_on_location_id"
+    t.index ["vehicle_id"], name: "index_vehicle_items_on_vehicle_id"
   end
 
-  create_table "vehicules", force: :cascade do |t|
-    t.string "name"
+  create_table "vehicles", force: :cascade do |t|
+    t.string "code"
     t.bigint "mission_type_id"
     t.bigint "size_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["mission_type_id"], name: "index_vehicules_on_mission_type_id"
-    t.index ["size_id"], name: "index_vehicules_on_size_id"
+    t.index ["mission_type_id"], name: "index_vehicles_on_mission_type_id"
+    t.index ["size_id"], name: "index_vehicles_on_size_id"
   end
 
-  add_foreign_key "vehicule_items", "items"
-  add_foreign_key "vehicule_items", "vehicules"
-  add_foreign_key "vehicules", "mission_types"
-  add_foreign_key "vehicules", "sizes"
+  add_foreign_key "mission_type_items", "items"
+  add_foreign_key "mission_type_items", "mission_types"
+  add_foreign_key "vehicle_items", "items"
+  add_foreign_key "vehicle_items", "locations"
+  add_foreign_key "vehicle_items", "vehicles"
+  add_foreign_key "vehicles", "mission_types"
+  add_foreign_key "vehicles", "sizes"
 end

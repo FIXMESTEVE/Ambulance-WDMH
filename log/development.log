@@ -4067,3 +4067,153 @@ Processing by VehiculesController#show as HTML
 Completed 200 OK in 906ms (Views: 873.0ms | ActiveRecord: 5.3ms)
 
 
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (244.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ambu-wdmh_development"[0m
+  [1m[35m (222.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ambu-wdmh_test"[0m
+  [1m[35m (636.0ms)[0m  [1m[35mCREATE DATABASE "ambu-wdmh_development" ENCODING = 'unicode'[0m
+  [1m[35m (687.3ms)[0m  [1m[35mCREATE DATABASE "ambu-wdmh_test" ENCODING = 'unicode'[0m
+  [1m[35m (105.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (86.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2571191524115217360)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateItems (20171014093700)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (97.2ms)[0m  [1m[35mCREATE TABLE "items" ("id" bigserial primary key, "name" character varying, "expire_date" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171014093700"]]
+  [1m[35m (17.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMissionTypes (20171014095030)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (72.8ms)[0m  [1m[35mCREATE TABLE "mission_types" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171014095030"]]
+  [1m[35m (11.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSizes (20171014095103)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (88.8ms)[0m  [1m[35mCREATE TABLE "sizes" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171014095103"]]
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateVehicles (20171014095621)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (77.6ms)[0m  [1m[35mCREATE TABLE "vehicles" ("id" bigserial primary key, "code" character varying, "mission_type_id" bigint, "size_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_e6c82d348b"
+FOREIGN KEY ("mission_type_id")
+  REFERENCES "mission_types" ("id")
+, CONSTRAINT "fk_rails_9684240f1a"
+FOREIGN KEY ("size_id")
+  REFERENCES "sizes" ("id")
+)[0m
+  [1m[35m (37.5ms)[0m  [1m[35mCREATE  INDEX  "index_vehicles_on_mission_type_id" ON "vehicles"  ("mission_type_id")[0m
+  [1m[35m (41.4ms)[0m  [1m[35mCREATE  INDEX  "index_vehicles_on_size_id" ON "vehicles"  ("size_id")[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171014095621"]]
+  [1m[35m (19.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateVehicleItems (20171014095703)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (89.4ms)[0m  [1m[35mCREATE TABLE "vehicle_items" ("id" bigserial primary key, "item_id" bigint, "vehicle_id" bigint, "quantity" integer, "optionnal" boolean, "comment" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_6d2a765355"
+FOREIGN KEY ("item_id")
+  REFERENCES "items" ("id")
+, CONSTRAINT "fk_rails_e5d4a36bad"
+FOREIGN KEY ("vehicle_id")
+  REFERENCES "vehicles" ("id")
+)[0m
+  [1m[35m (39.6ms)[0m  [1m[35mCREATE  INDEX  "index_vehicle_items_on_item_id" ON "vehicle_items"  ("item_id")[0m
+  [1m[35m (30.5ms)[0m  [1m[35mCREATE  INDEX  "index_vehicle_items_on_vehicle_id" ON "vehicle_items"  ("vehicle_id")[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171014095703"]]
+  [1m[35m (17.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-10-14 15:25:19.840851"], ["updated_at", "2017-10-14 15:25:19.840851"]]
+  [1m[35m (15.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2571191524115217360)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (218.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ambu-wdmh_development"[0m
+  [1m[35m (223.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ambu-wdmh_test"[0m
+  [1m[35m (647.2ms)[0m  [1m[35mCREATE DATABASE "ambu-wdmh_development" ENCODING = 'unicode'[0m
+  [1m[35m (657.4ms)[0m  [1m[35mCREATE DATABASE "ambu-wdmh_test" ENCODING = 'unicode'[0m
+  [1m[35m (116.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (86.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2571191524115217360)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateItems (20171014093700)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (67.2ms)[0m  [1m[35mCREATE TABLE "items" ("id" bigserial primary key, "name" character varying, "expire_date" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171014093700"]]
+  [1m[35m (15.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMissionTypes (20171014095030)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (64.4ms)[0m  [1m[35mCREATE TABLE "mission_types" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171014095030"]]
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSizes (20171014095103)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (87.4ms)[0m  [1m[35mCREATE TABLE "sizes" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171014095103"]]
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateVehicles (20171014095621)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (78.5ms)[0m  [1m[35mCREATE TABLE "vehicles" ("id" bigserial primary key, "code" character varying, "mission_type_id" bigint, "size_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_e6c82d348b"
+FOREIGN KEY ("mission_type_id")
+  REFERENCES "mission_types" ("id")
+, CONSTRAINT "fk_rails_9684240f1a"
+FOREIGN KEY ("size_id")
+  REFERENCES "sizes" ("id")
+)[0m
+  [1m[35m (27.2ms)[0m  [1m[35mCREATE  INDEX  "index_vehicles_on_mission_type_id" ON "vehicles"  ("mission_type_id")[0m
+  [1m[35m (30.4ms)[0m  [1m[35mCREATE  INDEX  "index_vehicles_on_size_id" ON "vehicles"  ("size_id")[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171014095621"]]
+  [1m[35m (16.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateVehicleItems (20171014095703)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (70.7ms)[0m  [1m[35mCREATE TABLE "vehicle_items" ("id" bigserial primary key, "item_id" bigint, "vehicle_id" bigint, "quantity" integer, "optionnal" boolean, "comment" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_6d2a765355"
+FOREIGN KEY ("item_id")
+  REFERENCES "items" ("id")
+, CONSTRAINT "fk_rails_e5d4a36bad"
+FOREIGN KEY ("vehicle_id")
+  REFERENCES "vehicles" ("id")
+)[0m
+  [1m[35m (28.3ms)[0m  [1m[35mCREATE  INDEX  "index_vehicle_items_on_item_id" ON "vehicle_items"  ("item_id")[0m
+  [1m[35m (30.2ms)[0m  [1m[35mCREATE  INDEX  "index_vehicle_items_on_vehicle_id" ON "vehicle_items"  ("vehicle_id")[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171014095703"]]
+  [1m[35m (12.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateLocations (20171014152605)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (86.6ms)[0m  [1m[35mCREATE TABLE "locations" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171014152605"]]
+  [1m[35m (7.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddLocationToVehicleItems (20171014152642)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (17.3ms)[0m  [1m[35mALTER TABLE "vehicle_items" ADD "location_id" bigint[0m
+  [1m[35m (40.6ms)[0m  [1m[35mCREATE  INDEX  "index_vehicle_items_on_location_id" ON "vehicle_items"  ("location_id")[0m
+  [1m[35m (2.8ms)[0m  [1m[35mALTER TABLE "vehicle_items" ADD CONSTRAINT "fk_rails_b988e65301"
+FOREIGN KEY ("location_id")
+  REFERENCES "locations" ("id")
+[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171014152642"]]
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMissionTypeItems (20171014152844)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (40.2ms)[0m  [1m[35mCREATE TABLE "mission_type_items" ("id" bigserial primary key, "item_id" bigint, "mission_type_id" bigint, "quantity" integer, "required" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_1eb5923d63"
+FOREIGN KEY ("item_id")
+  REFERENCES "items" ("id")
+, CONSTRAINT "fk_rails_fdd314888f"
+FOREIGN KEY ("mission_type_id")
+  REFERENCES "mission_types" ("id")
+)[0m
+  [1m[35m (28.1ms)[0m  [1m[35mCREATE  INDEX  "index_mission_type_items_on_item_id" ON "mission_type_items"  ("item_id")[0m
+  [1m[35m (30.1ms)[0m  [1m[35mCREATE  INDEX  "index_mission_type_items_on_mission_type_id" ON "mission_type_items"  ("mission_type_id")[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171014152844"]]
+  [1m[35m (20.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-10-14 15:29:04.608832"], ["updated_at", "2017-10-14 15:29:04.608832"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(2571191524115217360)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
