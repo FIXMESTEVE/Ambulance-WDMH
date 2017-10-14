@@ -1,0 +1,16 @@
+// Variables
+
+// Gray and Brand Colors for use across theme
+
+$background-primary: #f9FAFA;
+$background-secondary: rgba(116, 137, 145, 0.75);
+$text-color: #3A6A75;
+$text-color-secondary: #668B94;
+$danger-block: #D11436;
+
+$gray-base: #000 !default;
+$gray-darker: lighten($gray-base, 13.5%) !default;
+$gray-dark: lighten($gray-base, 20%) !default;
+$gray: lighten($gray-base, 33.5%) !default;
+$gray-light: lighten($gray-base, 52.7%) !default;
+$gray-lighter: lighten($gray-base, 79.5%) !default;

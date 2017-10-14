@@ -1,0 +1,102 @@
+#update-modal {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 13% 5%;
+  background: $background-secondary;
+  #box-content {
+    height: 100%;
+    background: #FBFBFB;
+    border: 1px solid #70B80D;
+    border-radius: 70px / 93.97px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    p {
+      font-size: 35px;
+      color: $text-color-secondary;
+      text-align: left;
+    }
+    .item {
+      margin: 10%;
+      font-size: 4rem;
+      text-align: center;
+    }
+    .content-inner {
+      padding: 15%;
+      // item location and name
+      .location-category {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      .item-name {
+        font-size: 2.6em;
+        color: $gray;
+        border-bottom: 1px solid #70B80D;
+      }
+      // quantity
+      .quantity, .expiration-date {
+        margin-top: 14%;
+        p {
+          color: $gray-light;
+          font-style: italic;
+        }
+        .counter {
+          display: flex;
+          justify-content: space-between;
+          border: 2px solid #70B80D;
+          border-radius: 60px;
+          height: 7.5rem;
+          overflow: hidden;
+          span {
+            width: 23%;
+            font-size: 3rem;
+            color: #495057;
+            background-color: #e9ecef;
+            border: 1px solid rgba(0,0,0,.15);
+            border-radius: .25rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          p {
+            padding-top: 2%;
+            color: $text-color;
+            font-size: 3rem;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+      .expiration-date {
+        input {
+          height: 7rem;
+          padding-top: 5%;
+          border: white;
+          border-radius: 35px;
+          box-shadow: 3px 15px 90px -30px $gray-light;
+          text-align: center;
+          font-size: 2.7rem;
+          &::placeholder {
+            text-align: center;
+            font-size: 2.7rem;
+          }
+        }
+      }
+      #validate {
+        height: 100%;
+        padding: 15% 0 5% 0;
+        text-align: center;
+        .btn {
+          width: 100%;
+          height: 7rem;
+          border-radius: 100px;
+          background-color: #73B650;
+          font-size: 2.5rem;
+          box-shadow: 3px 15px 90px -30px #C4E6B2;
+        }
+      }
+    }
+  }
+}

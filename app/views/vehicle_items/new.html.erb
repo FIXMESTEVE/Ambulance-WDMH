@@ -1,29 +1,47 @@
-<h1>VehiculeItems#new</h1>
-<p>Find me in app/views/vehicule_items/new.html.erb</p>
-<div id='cameraStream'></div>
+<header style="background-color: white; box-shadow: 3px 15px 30px #EEE; width: 100%; height: 5rem; display: flex; justify-content: center; align-items: center;">
+    <p style="font-size: 2rem;">Scan</p>
+</header>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mt-5">
+        <div id='cameraStream'></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <button class="btn btn-primary mt-5 text-center" id="scanner" style="position: absolute; border-radius: 50%; height: 4rem; width: 4rem; font-size: 2rem;"><i class="fa fa-camera" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
 
 <%= content_for :after_js do %>
 <script>
-  Quagga.init({
-    inputStream : {
-      name : "Live",
-      type : "LiveStream",
-      target: document.querySelector('#cameraStream')    // Or '#yourElement' (optional)
-    },
-    decoder: {
-      readers: ["code_128_reader"]
-  }
-  }, function(err) {
-      if (err) {
-          console.log(err);
-          return
+  $(document).ready(function() {
+    $('#scanner').on('click', function(e){
+      Quagga.init({
+        inputStream : {
+          name : "Live",
+          type : "LiveStream",
+          target: document.querySelector('#cameraStream')    // Or '#yourElement' (optional)
+        },
+        decoder: {
+          readers: ["code_128_reader"]
       }
-      console.log("Initialization finished. Ready to start");
-      Quagga.start();
+      }, function(err) {
+          if (err) {
+              console.log(err);
+              return
+          }
+          console.log("Initialization finished. Ready to start");
+          Quagga.start();
 
-      Quagga.onDetected(function(data){
-        console.log(data.codeResult.code);
-      })
+          Quagga.onDetected(function(data){
+            console.log(data.codeResult.code);
+          })
+      });
+    });
   });
 </script>
 <% end %>

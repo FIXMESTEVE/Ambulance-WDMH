@@ -1,0 +1,31 @@
+// Bootstrap overrides for this template
+.text-primary {
+  color: $text-color !important;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.btn-default {
+  @include button-variant($gray-darker, white, white);
+}
+
+.btn-primary {
+  background-color: #479AC8;
+}
+
+.btn-success {
+  background-color: #73B650
+}
+
+
+.btn {
+  font-weight: 700;
+  border: none;
+}
+
+.btn-xl {
+  padding: 15px 30px;
+}

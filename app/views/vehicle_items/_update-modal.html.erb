@@ -1,0 +1,47 @@
+<section id="update-modal">
+  <div class="container-fluid" id="box-content">
+    <p class="item">Item</p>
+    <%= simple_form_for :vehicule_item, url: vehicle_vehicle_item_path(Vehicle.first, @vitem), method: "post", html: {class: "content-inner"} do |f| %>
+
+      <div>
+        <p class="location-category"><%= @vitem.location.name %></p>
+        <p class="item-name"><%= @vitem.item.name %></p>
+      </div>
+      <div class="quantity">
+        <p>Quantité</p>
+        <div class="counter">
+          <span id="less">-</span>
+          <p><%= @vitem.quantity %></p>
+          <span id="more">+</span>
+        </div>
+        <%= f.hidden_field :quantity %>
+      </div>
+      <div class="expiration-date">
+        <p>Date de péremption</p>
+        <%= f.input :expire_date, label: false, placeholder: "jj/mm/yyyy", input_html: {class: "form-control"} %>
+      </div>
+      <div id="validate">
+        <%= f.submit "Valider", class: "btn btn-success btn-lg"  %>
+      </div>
+    <% end %>
+  </div>
+</section>
+
+<%= content_for :after_js do %>
+<script>
+  $(document).ready(function(e){
+    $('#less').on('click', function(e){
+      var quantity = parseInt($('.counter>p').text())
+      if(quantity>=1)
+        var quantity = quantity - 1
+        $('.counter>p').text(quantity)
+        $('#vehicle_item_quantity').val(quantity)
+    });
+    $('#more').on('click', function(e){
+      var quantity = parseInt($('.counter>p').text())
+      $('.counter>p').text(quantity + 1)
+      $('#vehicle_item_quantity').val(quantity + 1)
+    });
+  });
+</script>
+<% end %>

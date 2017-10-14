@@ -9,7 +9,7 @@
 datas = [
 	{
 	id: 0, name: 'Interieur conducteur', items: [
-		{id: 0, name: 'Coupe cinture', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Coupe ceinture', quantity: 1, required: 1, expireDate: 0},
 		{id: 0, name: 'Extincteur', quantity: 1, required: 1, expireDate: 1},
 		{id: 0, name: 'Gants de protection', quantity: 1, required: 0, expireDate: 0},
 		{id: 0, name: 'Gilets jaunes', quantity: 3, required: 0, expireDate: 0},
