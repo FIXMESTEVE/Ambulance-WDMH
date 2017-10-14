@@ -22,8 +22,7 @@ datas = [
 		{id: 0, name: 'Lingettes multi-usages', quantity: 1, required: 1, expireDate: 0},
 		{id: 0, name: 'Dossier ambulance (chaque onglet complet)', quantity: 1, required: 1, expireDate: 0}
 	]},
-	{
-	id: 0, name: 'Matériel portoir brancardage immobilisation', items: [
+	{id: 0, name: 'Matériel portoir brancardage immobilisation', items: [
 		{id: 0, name: 'Brancard', quantity: 1, required: 1, expireDate: 0},
 		{id: 0, name: 'Chaise', quantity: 1, required: 1, expireDate: 0},
 		{id: 0, name: 'Matellas de transfert', quantity: 1, required: 0, expireDate: 0},
@@ -53,7 +52,7 @@ datas = [
 		{id: 0, name: 'Boite objet coupant', quantity: 1, required: 1, expireDate: 0},
 		{id: 0, name: 'Kit de protection individuelle', quantity: 1, required: 1, expireDate: 0},
 		{id: 0, name: 'Masques', quantity: 1, required: 1, expireDate: 0},
-		{id: 0, name: 'Masques ffp2', quantity: 1, required: 1, expireDate: 0}		
+		{id: 0, name: 'Masques ffp2', quantity: 1, required: 1, expireDate: 0}
 	]},
 	{
 	id: 0, name: 'Réanimation oxygénothérapie', items: [
@@ -76,7 +75,7 @@ datas = [
 		{id: 0, name: 'Aspirateur', quantity: 1, required: 1, expireDate: 1},
 		{id: 0, name: 'Embouts de raccord 1', quantity: 1, required: 1, expireDate: 1},
 		{id: 0, name: 'BAB', quantity: 1, required: 1, expireDate: 0},
-		{id: 0, name: 'DSA', quantity: 1, required: 1, expireDate: 0}		
+		{id: 0, name: 'DSA', quantity: 1, required: 1, expireDate: 0}
 	]},
 	{
 	id: 0, name: 'Intérieur supplémentaire', items: [
@@ -87,7 +86,7 @@ datas = [
 		{id: 0, name: 'Hemokits', quantity: 1, required: 1, expireDate: 1},
 		{id: 0, name: 'Vomix', quantity: 10, required: 1, expireDate: 0},
 		{id: 0, name: 'Harricots', quantity: 5, required: 1, expireDate: 0},
-		{id: 0, name: 'Draps à usage unique', quantity: 5, required: 1, expireDate: 0}		
+		{id: 0, name: 'Draps à usage unique', quantity: 5, required: 1, expireDate: 0}
 	]},
 	{
 	id: 0, name: 'Sac de secour', items: [
@@ -146,23 +145,22 @@ sizes = Size.create([{name: 'A'},{name: 'B'},{name: 'C'}])
 #Mission types
 missionTypes = MissionType.create([{name: 'Néonatale'},{name: 'Classique'}])
 
-#Locations
-datas.each do |location|
-	location.id = Location.create(name: location.name).id;
-end
 
 #Vehicle
 vehicle = Vehicle.create(code: 'BZ-421-DE', mission_type: missionTypes[0], size: sizes[2])
 
+puts "created #{Size.all.size} sizes, #{MissionType.all.size} mission types and #{Vehicle.all.size} vehicle"
+
 #Items
 datas.each do |location|
-	location.items.each do |item|
-		item.id = Item.create(name: item.name)
-		
-		MissionTypeItem.create(quantity: item.quantity, required: item.required, id_item: item.id, id_mission_type: missionTypes[0].id)
-		
-		VehicleItem.create(id_item: items[i].id, quantity: 0, comment: null, location: location.id)
-	end
+	Location.create(name: location[:name])
+  location[:items].each do |item|
+    Item.create(name: item[:name])
+
+    MissionTypeItem.create(quantity: item[:quantity], required: item[:required], item: Item.last, mission_type: MissionType.first)
+
+    VehicleItem.create(item: Item.last, quantity: 0, location: Location.last, vehicle: Vehicle.first)
+  end
 end
 
-puts "created #{Size.all.size} sizes, #{MissionType.all.size} mission types, #{Location.all.size} locations, #{Item.all.size} items and #{Vehicle.all.size} vehicle"
+puts "created #{Item.all.size} items, #{MissionTypeItem.all.size} mission type items, #{Location.all.size} locations and #{VehicleItem.all.size} vehicle items"
