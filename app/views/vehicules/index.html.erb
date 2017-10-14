@@ -4,8 +4,8 @@
     <p>Veuillez saisir le numéro de votre véhicule</p>
     <p>Numéro de plaque d'immatriculation</p>
   </div>
-  <%= simple_form_for @vehicule, url: vehicule_vehicule_items_path(Vehicule.first), method: "get" do |f| %>
-    <%= f.text_field :name, class: "form-control" %>
+  <%= simple_form_for @vehicule, url: find_vehicle_path, method: "get" do |f| %>
+    <%= f.input :name, class: "form-control" %>
     <%= f.submit "valider", class: "btn btn-success" %>
   <% end %>
 </div>
