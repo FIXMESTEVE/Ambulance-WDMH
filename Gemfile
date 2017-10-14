@@ -54,3 +54,4 @@ gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'bootstrap', '~> 4.0.0.beta'
 gem 'jquery-rails'
 gem "autoprefixer-rails"
+gem 'simple_form'

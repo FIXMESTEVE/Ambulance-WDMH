@@ -1,0 +1,2 @@
+module VehiculeItemsHelper
+end
