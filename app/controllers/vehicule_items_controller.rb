@@ -1,9 +1,4 @@
 class VehiculeItemsController < ApplicationController
-  def index
-    @vehicule = find_vehicule
-    @items = find_vehicule.vehicule_items
-  end
-
   def new
   end
 
@@ -18,7 +13,7 @@ class VehiculeItemsController < ApplicationController
 
   private
 
-  def find_vehicule
-    Vehicule.find(params["vehicule_id"])
+  def find_vehicle
+    Vehicule.find(params["id"])
   end
 end
