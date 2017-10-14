@@ -1,4 +1,4 @@
-class VehiculeItemsController < ApplicationController
+class VehicleItemsController < ApplicationController
   def new
   end
 
@@ -14,6 +14,6 @@ class VehiculeItemsController < ApplicationController
   private
 
   def find_vehicle
-    Vehicule.find(params["id"])
+    Vehicle.find(params["id"])
   end
 end
