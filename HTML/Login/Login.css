@@ -1,0 +1,58 @@
+body{
+	font-family: "Open Sans", sans-serif;
+	margin:0;
+}
+
+.top{
+	width:360px;
+	height:63px;
+	text-align: center;
+}
+
+.content{
+	text-align: center;
+	display: table;
+	height:100%;
+	background-color: #FBFBFB;
+	box-shadow: 0px -5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.topText{
+	font-size: 20;
+	padding-top:18px;
+	padding-bottom:18px;
+}
+
+.labelVehicule1{
+	font-weight: bold;
+	font-size: 20;
+	padding-top:158px;
+}
+
+.labelVehicule2{
+	font-size: 14;
+	padding: 13px 40px 60px 64px;
+}
+
+.inputImmatriculation{
+	font-size: 17;
+	margin: 0px 0px 38px 0px;
+}
+
+.listeVehicules{
+	display: block;
+	font-size: 13;
+	margin: 0px 0px 51px 0px;
+}
+
+.btnValider{
+	font-weight: bold;
+	font-size: 13;
+	color: #ffffff;
+	background: #73B650;
+	border-radius: 24px;
+	width:200px;
+	height:48px;
+	display: inline-block;
+	vertical-align: middle;
+}
