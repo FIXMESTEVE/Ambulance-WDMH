@@ -6,22 +6,163 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-##itemRefs = [] #todo
+datas = [
+	{
+	id: 0, name: 'Interieur conducteur', items: [
+		{id: 0, name: 'Coupe cinture', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Extincteur', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Gants de protection', quantity: 1, required: 0, expireDate: 0},
+		{id: 0, name: 'Gilets jaunes', quantity: 3, required: 0, expireDate: 0},
+		{id: 0, name: 'Désodorisant', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Carnet', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Stylo', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Triangle', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Manugel', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Lampe', quantity: 1, required: 0, expireDate: 0},
+		{id: 0, name: 'Lingettes multi-usages', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Dossier ambulance (chaque onglet complet)', quantity: 1, required: 1, expireDate: 0}
+	]},
+	{
+	id: 0, name: 'Matériel portoir brancardage immobilisation', items: [
+		{id: 0, name: 'Brancard', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Chaise', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Matellas de transfert', quantity: 1, required: 0, expireDate: 0},
+		{id: 0, name: 'Matellas coquille', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Atelle jambes', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Atelle bras', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Atelle poignet', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Collier cervicales adulte', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Collier cervicales enfant', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Collier cervicales pedia', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Pompe à dépression', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Attache brancard pedi', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Cuillère', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Support soluté', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Couverture', quantity: 1, required: 1, expireDate: 0}
+	]},
+	{
+	id: 0, name: 'Hygiène', items: [
+		{id: 0, name: 'Bassin', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Urinal', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Gants taille S', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Gants taille M', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Gants taille L', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Sopalin', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Produit désinfectant', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Sac dasri', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Boite objet coupant', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Kit de protection individuelle', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Masques', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Masques ffp2', quantity: 1, required: 1, expireDate: 0}		
+	]},
+	{
+	id: 0, name: 'Réanimation oxygénothérapie', items: [
+		{id: 0, name: 'Oxygène', quantity: 2, required: 1, expireDate: 0},
+		{id: 0, name: 'Masques oxygène adulte', quantity: 5, required: 1, expireDate: 1},
+		{id: 0, name: 'Masques oxygène enfant', quantity: 3, required: 1, expireDate: 1},
+		{id: 0, name: 'Masques oxygène pédia', quantity: 3, required: 0, expireDate: 1},
+		{id: 0, name: 'Masques htc adulte', quantity: 5, required: 1, expireDate: 1},
+		{id: 0, name: 'Masques htc enfant', quantity: 5, required: 1, expireDate: 1},
+		{id: 0, name: 'Masquse htc pédia', quantity: 3, required: 1, expireDate: 1},
+		{id: 0, name: 'Lunettes', quantity: 5, required: 1, expireDate: 1},
+		{id: 0, name: 'Bavus adulte', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Bavus enfant', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Bavus pédia', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Filtres', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Masques bavu supl', quantity: 2, required: 0, expireDate: 1},
+		{id: 0, name: 'Sondes', quantity: 3, required: 1, expireDate: 1},
+		{id: 0, name: 'Canules jeux', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Canules aspi 2', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Aspirateur', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Embouts de raccord 1', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'BAB', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'DSA', quantity: 1, required: 1, expireDate: 0}		
+	]},
+	{
+	id: 0, name: 'Intérieur supplémentaire', items: [
+		{id: 0, name: 'Tensiomètre manuel', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Brulkits', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Materkits', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Sectakits', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Hemokits', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Vomix', quantity: 10, required: 1, expireDate: 0},
+		{id: 0, name: 'Harricots', quantity: 5, required: 1, expireDate: 0},
+		{id: 0, name: 'Draps à usage unique', quantity: 5, required: 1, expireDate: 0}		
+	]},
+	{
+	id: 0, name: 'Sac de secour', items: [
+		{id: 0, name: 'Tensiomètre électronique', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Saturomètre', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Glycémie', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Thermomètre', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Stétoscope', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Ciseaux', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Lampe neuro', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Compresses', quantity: 20, required: 1, expireDate: 1},
+		{id: 0, name: 'Dosettes désinfectantes', quantity: 10, required: 1, expireDate: 1},
+		{id: 0, name: 'Antiséptiques', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Grandes bandes', quantity: 3, required: 1, expireDate: 0},
+		{id: 0, name: 'Petites bandes', quantity: 3, required: 1, expireDate: 0},
+		{id: 0, name: 'Couverture de survie', quantity: 2, required: 1, expireDate: 0},
+		{id: 0, name: 'Echarpes', quantity: 2, required: 1, expireDate: 0},
+		{id: 0, name: 'Champs stériles', quantity: 2, required: 1, expireDate: 1},
+		{id: 0, name: 'Paires de gants stériles', quantity: 5, required: 1, expireDate: 1},
+		{id: 0, name: 'Clamps barres', quantity: 2, required: 1, expireDate: 1},
+		{id: 0, name: 'Sac dasri', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Pinces', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Pansements américains', quantity: 2, required: 1, expireDate: 1},
+		{id: 0, name: 'Rasoirs', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Sucres', quantity: 5, required: 1, expireDate: 0},
+		{id: 0, name: 'Masques htc', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Lunettes', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Vomix', quantity: 2, required: 1, expireDate: 0},
+		{id: 0, name: 'Poches de froid', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Sparadra', quantity: 2, required: 1, expireDate: 0}
+	]},
+	{
+	id: 0, name: 'Tiroir urgences', items: [
+		{id: 0, name: 'Pansements américains', quantity: 2, required: 1, expireDate: 1},
+		{id: 0, name: 'Carnet', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Stylo', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Grands champs stériles', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Petits champs stériles', quantity: 2, required: 1, expireDate: 1},
+		{id: 0, name: 'Gants stériles', quantity: 3, required: 1, expireDate: 1},
+		{id: 0, name: 'Echarpes', quantity: 2, required: 1, expireDate: 1},
+		{id: 0, name: 'Petites bandes', quantity: 5, required: 1, expireDate: 1},
+		{id: 0, name: 'Grandes bandes', quantity: 5, required: 1, expireDate: 1},
+		{id: 0, name: 'Dosettes désinfectantes', quantity: 10, required: 1, expireDate: 1},
+		{id: 0, name: 'Antiséptique', quantity: 1, required: 1, expireDate: 1},
+		{id: 0, name: 'Couvertures de survie', quantity: 2, required: 1, expireDate: 0},
+		{id: 0, name: 'Lampe', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Ciseaux', quantity: 1, required: 1, expireDate: 0},
+		{id: 0, name: 'Sparadras', quantity: 2, required: 1, expireDate: 0},
+		{id: 0, name: 'Rasoirs', quantity: 1, required: 1, expireDate: 0}
+	]}
+]
 
 #Sizes
 sizes = Size.create([{name: 'A'},{name: 'B'},{name: 'C'}])
-#Categories
+
+#Mission types
 missionTypes = MissionType.create([{name: 'Néonatale'},{name: 'Classique'}])
-#locations
-locations = Location.create([{name: 'Interieur conducteur'},{name: 'Matériel portoir brancardage immobilisation'},{name: 'Hygiène'},{name: 'Réanimation oxygénothérapie'},{name: 'Intérieur supplémentaire'},{name: 'Sac de secour' },{name: 'Tiroir urgences'}])
-#items
-items = Item.create([{name: 'Coupe cinture'},{name: 'Extincteur'},{name: 'Gants de protection'},{name: 'Gilets jaunes'},{name: 'Désodorisant'},{name: 'Carnet'},{name: 'Stylo'},{name: 'Triangle'},{name: 'Manugel'},{name: 'Lampe'},{name: 'Lingettes multi-usages'},{name: 'Dossier ambulance (chaque onglet complet)'},{name: 'Brancard'},{name: 'Chaise'},{name: 'Matellas de transfert'},{name: 'Matellas coquille'},{name: 'Atelle jambes'},{name: 'Atelle bras'},{name: 'Atelle poignet'},{name: 'Collier cervicales adulte'},{name: 'Collier cervicales enfant'},{name: 'Collier cervicales pedia'},{name: 'Pompe à dépression'},{name: 'Attache brancard pedi'},{name: 'Cuillère'},{name: 'Support soluté'},{name: 'Couverture'},{name: 'Bassin'},{name: 'Urinal'},{name: 'Gants taille S'},{name: 'Gants taille M'},{name: 'Gants taille L'},{name: 'Sopalin'},{name: 'Produit désinfectant'},{name: 'Sac dasri'},{name: 'Boite objet coupant'},{name: 'Kit de protection individuelle'},{name: 'Masques'},{name: 'Masques ffp2'},{name: 'Oxygène'},{name: 'Masques oxygène adulte'},{name: 'Masques oxygène enfant'},{name: 'Masques oxygène pédia'},{name: 'Masques htc adulte'},{name: 'Masques htc enfant'},{name: 'Masquse htc pédia'},{name: 'Lunettes'},{name: 'Bavus adulte'},{name: 'Bavus enfant'},{name: 'Bavus pédia'},{name: 'Filtres'},{name: 'Masques bavu supl'},{name: 'Sondes'},{name: 'Canules jeux'},{name: 'Canules aspi 2'},{name: 'Aspirateur'},{name: 'Embouts de raccord 1'},{name: 'BAB'},{name: 'DSA'},{name: 'Tensiomètre manuel'},{name: 'Brulkits'},{name: 'Materkits'},{name: 'Sectakits'},{name: 'Hemokits'},{name: 'Vomix'},{name: 'Harricots'},{name: 'Draps à usage unique'},{name: 'Tensiomètre électronique'},{name: 'Saturomètre'},{name: 'Glycémie'},{name: 'Thermomètre'},{name: 'Stétoscope'},{name: 'Ciseaux'},{name: 'Lampe neuro'},{name: 'Compresses'},{name: 'Dosettes désinfectantes'},{name: 'Antiséptiques'},{name: 'Grandes bandes'},{name: 'Petites bandes'},{name: 'Couverture de survie'},{name: 'Echarpes'},{name: 'Champs stériles'},{name: 'Paires de gants stériles'},{name: 'Clamps barres'},{name: 'Sac dasri'},{name: 'Pinces'},{name: 'Pansements américains'},{name: 'Rasoirs'},{name: 'Sucres'},{name: 'Masques htc'},{name: 'Lunettes'},{name: 'Vomix'},{name: 'Poches de froid'},{name: 'Sparadra'},{name: 'Pansements américains'},{name: 'Carnet'},{name: 'Stylo'},{name: 'Grands champs stériles'},{name: 'Petits champs stériles'},{name: 'Gants stériles'},{name: 'Echarpes'},{name: 'Petites bandes'},{name: 'Grandes bandes'},{name: 'Dosettes désinfectantes'},{name: 'Antiséptique'},{name: 'Couvertures de survie'},{name: 'Lampe'},{name: 'Ciseaux'},{name: 'Sparadras'},{name: 'Rasoirs'}])
-#vehicle
+
+#Locations
+datas.each do |location|
+	location.id = Location.create(name: location.name).id;
+end
+
+#Vehicle
 vehicle = Vehicle.create(code: 'BZ-421-DE', mission_type: missionTypes[0], size: sizes[2])
-#vehicle_items &
-#items.each_with_index do |item, i|
-	#MissionTypeItem.create(quantity: itemRefs[i].quantity, required: itemRefs[i].required, id_item: items[i].id, id_mission_type: missionTypes[0].id)
-	#VehicleItem.create(id_item: items[i].id, quantity: 0, comment: null, 0) #change location ref
-#end
+
+#Items
+datas.each do |location|
+	location.items.each do |item|
+		item.id = Item.create(name: item.name)
+		
+		MissionTypeItem.create(quantity: item.quantity, required: item.required, id_item: item.id, id_mission_type: missionTypes[0].id)
+		
+		VehicleItem.create(id_item: items[i].id, quantity: 0, comment: null, location: location.id)
+	end
+end
 
 puts "created #{Size.all.size} sizes, #{MissionType.all.size} mission types, #{Location.all.size} locations, #{Item.all.size} items and #{Vehicle.all.size} vehicle"
