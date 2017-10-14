@@ -5,7 +5,7 @@
     <p>Numéro de plaque d'immatriculation</p>
   </div>
   <%= simple_form_for @vehicle, url: find_vehicle_path, method: "get" do |f| %>
-    <%= f.input :name, class: "form-control" %>
+    <%= f.input :code, class: "form-control" %>
     <%= f.submit "valider", class: "btn btn-success" %>
   <% end %>
 </div>

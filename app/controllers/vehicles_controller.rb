@@ -11,7 +11,7 @@ class VehiclesController < ApplicationController
 
 
   def find
-    redirect_to vehicle_path(Vehicle.find_by_name(params["vehicle"][:name]))
+    redirect_to vehicle_path(Vehicle.find_by_code(params["vehicle"][:code]))
   rescue
     redirect_to vehicles_path
   end
