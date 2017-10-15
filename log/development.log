@@ -22924,3 +22924,919 @@ Processing by VehiclesController#index as HTML
 Completed 200 OK in 2034ms (Views: 2033.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:12:10 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1900ms (Views: 1898.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:12:17 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1937ms (Views: 1936.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:12:47 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:13:01 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:13:18 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 1934ms (Views: 1933.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:13:31 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1963ms (Views: 1962.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:13:36 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1921ms (Views: 1919.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:14:12 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1917ms (Views: 1915.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:14:19 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 1913ms (Views: 1912.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:14:30 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.6ms)
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:14:32 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 2081ms (Views: 2079.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1980ms (Views: 1979.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:14:40 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1973ms (Views: 1972.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:15:02 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 52ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:15:08 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1896ms (Views: 1895.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:15:30 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1908ms (Views: 1907.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:15:43 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1952ms (Views: 1950.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:16:01 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 1882ms (Views: 1880.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:16:05 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 66ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:16:33 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:16:50 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:18:04 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 1915ms (Views: 1914.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:18:22 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:18:42 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:18:56 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 38ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:19:38 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 1903ms (Views: 1902.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:20:02 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1939ms (Views: 1938.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:20:24 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1894ms (Views: 1893.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:21:36 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:22:36 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 1921ms (Views: 1920.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:23:07 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1910ms (Views: 1909.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:23:26 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1922ms (Views: 1921.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:23:35 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1908ms (Views: 1907.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:23:42 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1944ms (Views: 1942.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:23:53 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 1909ms (Views: 1908.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:24:05 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1931ms (Views: 1930.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:24:13 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1964ms (Views: 1962.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:24:17 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 2013ms (Views: 2011.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:24:24 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1921ms (Views: 1920.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:24:31 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 1908ms (Views: 1905.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:25:10 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:25:54 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 1944ms (Views: 1941.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:26:02 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1927ms (Views: 1925.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:26:23 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1896ms (Views: 1894.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:26:31 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1908ms (Views: 1907.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:26:41 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 2002ms (Views: 2001.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:26:58 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 1891ms (Views: 1889.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:27:11 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1899ms (Views: 1897.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:27:17 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1945ms (Views: 1944.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:27:38 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 566ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...adding: 5%; 17%": expected "{", was ";"):
+    4:     <title>AmbuWdmh</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:     <script src="https://use.fontawesome.com/84dbc16103.js"></script>
+   10:   </head>
+  
+app/assets/stylesheets/pages/_vehicles-index.scss:22
+app/assets/stylesheets/pages/index.scss:1
+app/assets/stylesheets/application.scss:7
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___4068826515219069980_70139941323160'
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:27:40 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 1908ms (Views: 1907.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:27:51 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1961ms (Views: 1960.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:28:08 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 1877ms (Views: 1875.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:28:16 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1941ms (Views: 1939.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:28:26 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1847ms (Views: 1845.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:28:39 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1916ms (Views: 1914.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:28:51 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 1908ms (Views: 1907.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:29:04 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1939ms (Views: 1938.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:29:16 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1877ms (Views: 1876.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:29:32 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 1870ms (Views: 1869.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:29:40 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1948ms (Views: 1946.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:29:47 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1921ms (Views: 1920.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:29:56 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1938ms (Views: 1936.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:30:03 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1864ms (Views: 1863.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:30:11 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1979ms (Views: 1978.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:30:19 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1940ms (Views: 1939.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:30:29 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 2029ms (Views: 2027.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:30:38 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1869ms (Views: 1868.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:30:49 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1961ms (Views: 1960.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:31:06 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:31:17 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1873ms (Views: 1871.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:31:37 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:32:06 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1851ms (Views: 1850.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:32:13 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1918ms (Views: 1917.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:32:17 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1925ms (Views: 1923.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:32:22 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:32:49 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1892ms (Views: 1891.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:33:01 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1916ms (Views: 1914.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:33:10 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1954ms (Views: 1951.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:33:54 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1917ms (Views: 1915.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:34:00 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1930ms (Views: 1928.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:34:09 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:34:11 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 2126ms (Views: 2124.9ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1956ms (Views: 1954.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:34:28 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1845ms (Views: 1843.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:35:00 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1859ms (Views: 1857.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:35:20 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1884ms (Views: 1883.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:35:47 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1809ms (Views: 1807.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:36:07 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 1884ms (Views: 1882.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:36:41 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1890ms (Views: 1889.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:37:01 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 1914ms (Views: 1912.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:37:12 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1878ms (Views: 1877.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:37:22 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1856ms (Views: 1854.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:37:43 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1900ms (Views: 1899.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:37:59 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1896ms (Views: 1894.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:38:05 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1873ms (Views: 1872.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:38:25 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1882ms (Views: 1881.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:38:33 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1958ms (Views: 1957.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:38:42 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1825ms (Views: 1823.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:39:00 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:39:30 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1873ms (Views: 1872.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:39:52 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1881ms (Views: 1880.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:39:58 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1871ms (Views: 1869.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:40:10 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1854ms (Views: 1852.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:40:18 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1859ms (Views: 1858.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:40:42 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1847ms (Views: 1846.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:40:47 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:41:21 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1932ms (Views: 1928.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:41:51 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:42:33 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/mheos/code/Mheaus/rails-projects/Ambulance-WDMH/app/views/vehicles/index.html.erb:10: syntax error, unexpected ','
+, label: false, placeholder: , input_html: {class: "form-con
+                              ^):
+  
+app/views/vehicles/index.html.erb:10: syntax error, unexpected ','
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:42:40 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:42:54 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:43:37 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1816ms (Views: 1814.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:44:15 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1852ms (Views: 1850.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:44:33 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1863ms (Views: 1861.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:44:39 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1913ms (Views: 1912.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:44:45 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 38ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:44:52 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1814ms (Views: 1813.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:45:23 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1873ms (Views: 1872.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:45:30 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1786ms (Views: 1785.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:46:07 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1908ms (Views: 1906.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:46:17 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1788ms (Views: 1786.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:46:45 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1874ms (Views: 1872.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:47:07 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1765ms (Views: 1764.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:47:14 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1887ms (Views: 1886.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:47:29 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1783ms (Views: 1782.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:47:59 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 1905ms (Views: 1904.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:48:16 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1788ms (Views: 1786.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:48:30 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1884ms (Views: 1882.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:49:45 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+

@@ -26,20 +26,20 @@
           type : "LiveStream",
           target: document.querySelector('#cameraStream')    // Or '#yourElement' (optional)
         },
-        decoder: {
-          readers: ["code_128_reader"]
-      }
+        decoder : {
+          readers : ["ean_reader"]
+        }
       }, function(err) {
-          if (err) {
-              console.log(err);
-              return
-          }
-          console.log("Initialization finished. Ready to start");
-          Quagga.start();
+        if (err) {
+            console.log(err);
+            return
+        }
+        console.log("Initialization finished. Ready to start");
+        Quagga.start();
 
-          Quagga.onDetected(function(data){
-            console.log(data.codeResult.code);
-          })
+        Quagga.onDetected(function(data){
+          console.log(data)
+        })
       });
     });
   });
