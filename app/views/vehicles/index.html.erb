@@ -1,12 +1,19 @@
-<div class="container">
-  <h1 class="mt-5">Identification</h1>
-  <div class="text-center">
-    <p>Veuillez saisir le numéro de votre véhicule</p>
-    <p>Numéro de plaque d'immatriculation</p>
+<section class="login">
+  <div class='top'>
+    <p>Identification</p>
   </div>
-  <%= simple_form_for @vehicle, url: find_vehicle_path, method: "get" do |f| %>
-    <%= f.input :code, class: "form-control" %>
-    <%= f.submit "valider", class: "btn btn-success" %>
-  <% end %>
-</div>
+  <div class='content'>
+    <p class='labelVehicule1'>Veuillez saisir le numéro de votre véhicule</p>
+    <p class='labelVehicule2'>Numéro de plaque d'immatriculation</p>
 
+    <%= simple_form_for @vehicle, url: find_vehicle_path, method: "get" do |f| %>
+      <%= f.input :code, label: false, placeholder: "BZ-421-DE", input_html: {class: "form-control code-input"} %>
+      <a href='#' class='listeVehicules'>
+        Liste des véhicules
+      </a>
+      <div id="validate">
+        <%= f.submit "Valider", class: "btn btn-success btn-lg btn-valider"  %>
+      </div>
+    <% end %>
+  </div>
+</section>
