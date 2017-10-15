@@ -1,0 +1,60 @@
+[
+	{
+		"category":"Réanimation oxygénique",
+		"items": [
+			{
+				"qty": -2,
+				"name": "Bouteilles O2"
+			},
+			{
+				"qty": -2,
+				"name": "Bouteilles O2"
+			},
+			{
+				"qty": -2,
+				"name": "Bouteilles O2"
+			},
+			{
+				"qty": -2,
+				"name": "Bouteilles O2"
+			},
+			{
+				"qty": -2,
+				"name": "Bouteilles O2"
+			},
+			{
+				"qty": -2,
+				"name": "Bouteilles O2"
+			}
+		]
+	},
+		{
+		"category":"Réanimation oxygénique",
+		"items": [
+			{
+				"qty": -2,
+				"name": "Bouteilles O2"
+			},
+			{
+				"qty": -2,
+				"name": "Bouteilles O2"
+			},
+			{
+				"qty": -2,
+				"name": "Bouteilles O2"
+			},
+			{
+				"qty": -2,
+				"name": "Bouteilles O2"
+			},
+			{
+				"qty": -2,
+				"name": "Bouteilles O2"
+			},
+			{
+				"qty": -2,
+				"name": "Bouteilles O2"
+			}
+		]
+	}
+]
