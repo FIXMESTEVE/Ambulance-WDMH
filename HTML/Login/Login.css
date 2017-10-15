@@ -1,15 +1,17 @@
 body{
 	font-family: "Open Sans", sans-serif;
 	margin:0;
+	overflow:hidden;
 }
 
 .top{
-	width:360px;
+	width:100%;
 	height:63px;
 	text-align: center;
 }
 
 .content{
+	width:100%;
 	text-align: center;
 	display: table;
 	height:100%;
@@ -47,7 +49,7 @@ body{
 
 .btnValider{
 	font-weight: bold;
-	font-size: 13;
+	font-size: 20;
 	color: #ffffff;
 	background: #73B650;
 	border-radius: 24px;
