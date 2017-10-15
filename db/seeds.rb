@@ -97,7 +97,7 @@ datas = [
 		{id: 0, name: 'Stétoscope', quantity: 1, required: 1, expireDate: 0},
 		{id: 0, name: 'Ciseaux', quantity: 1, required: 1, expireDate: 0},
 		{id: 0, name: 'Lampe neuro', quantity: 1, required: 1, expireDate: 0},
-		{id: 0, name: 'Compresses', quantity: 20, required: 1, expireDate: 1},
+		{id: 0, name: 'Compresses', quantity: 20, required: 1, code:3401044856788, expireDate: 1},
 		{id: 0, name: 'Dosettes désinfectantes', quantity: 10, required: 1, expireDate: 1},
 		{id: 0, name: 'Antiséptiques', quantity: 1, required: 1, expireDate: 1},
 		{id: 0, name: 'Grandes bandes', quantity: 3, required: 1, expireDate: 0},
