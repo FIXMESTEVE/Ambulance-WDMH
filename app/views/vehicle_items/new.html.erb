@@ -1,17 +1,20 @@
 <header style="background-color: white; box-shadow: 3px 15px 30px #EEE; width: 100%; height: 5rem; display: flex; justify-content: center; align-items: center;">
     <p style="font-size: 2rem;">Scan</p>
 </header>
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center mt-5">
-        <div id='cameraStream'></div>
-      </div>
+
+
+<section class="container-fluid new-v-item">
+  <div class="row">
+    <div class="col-12 text-center mt-5">
+    <div id='cameraStream'></div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <button class="btn btn-primary mt-5 text-center" id="scanner" style="position: absolute; border-radius: 50%; height: 4rem; width: 4rem; font-size: 2rem;"><i class="fa fa-camera" aria-hidden="true"></i></button>
-      </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center">
+      <button class="btn btn-primary text-center" id="scanner"><i class="fa fa-camera" aria-hidden="true"></i></button>
+    </div>
+    <div class="col-12" id="validate">
+      <%= link_to "Retour", vehicle_path(@vehicle), class: "btn btn-success"  %>
     </div>
   </div>
 </section>
@@ -19,7 +22,6 @@
 <%= content_for :after_js do %>
 <script>
   $(document).ready(function() {
-    $('#scanner').on('click', function(e){
       Quagga.init({
         inputStream : {
           name : "Live",
@@ -41,6 +43,14 @@
           console.log(data)
         })
       });
+
+    $('#scanner').on('click', function(e){
+      var item = {
+        code: 3401044856788,
+        name: 'Compresses',
+        required:true,
+        expire:true
+      };
     });
   });
 </script>

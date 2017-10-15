@@ -1,5 +1,6 @@
 class VehicleItemsController < ApplicationController
   def new
+    @vehicle = find_vehicle
   end
 
   def create
@@ -14,6 +15,6 @@ class VehicleItemsController < ApplicationController
   private
 
   def find_vehicle
-    Vehicle.find(params["id"])
+    Vehicle.find(params["vehicle_id"])
   end
 end

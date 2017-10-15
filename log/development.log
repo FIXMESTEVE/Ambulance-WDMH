@@ -23840,3 +23840,1141 @@ Processing by VehiclesController#index as HTML
 Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:55:11 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:55:17 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:55:27 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 440ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...cle-items#new";": expected selector or at-rule, was "";"):
+    4:     <title>AmbuWdmh</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:     <script src="https://use.fontawesome.com/84dbc16103.js"></script>
+   10:   </head>
+  
+app/assets/stylesheets/pages/index.scss:3
+app/assets/stylesheets/application.scss:7
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___4068826515219069980_70140110671980'
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:55:53 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1865ms (Views: 1863.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/find_vehicle?utf8=%E2%9C%93&vehicle%5Bcode%5D=&commit=Valider" for 127.0.0.1 at 2017-10-15 10:56:04 +0200
+Processing by VehiclesController#find as HTML
+  Parameters: {"utf8"=>"✓", "vehicle"=>{"code"=>""}, "commit"=>"Valider"}
+  [1m[36mVehicle Load (35.6ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."code" = $1 LIMIT $2[0m  [["code", ""], ["LIMIT", 1]]
+Redirected to http://localhost:3000/vehicles
+Completed 302 Found in 61ms (ActiveRecord: 35.9ms)
+
+
+Started GET "/vehicles" for 127.0.0.1 at 2017-10-15 10:56:04 +0200
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  Rendered vehicles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 71ms (Views: 70.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/find_vehicle?utf8=%E2%9C%93&vehicle%5Bcode%5D=BZ-421-DE&commit=Valider" for 127.0.0.1 at 2017-10-15 10:56:11 +0200
+Processing by VehiclesController#find as HTML
+  Parameters: {"utf8"=>"✓", "vehicle"=>{"code"=>"BZ-421-DE"}, "commit"=>"Valider"}
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."code" = $1 LIMIT $2[0m  [["code", "BZ-421-DE"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/vehicles/1
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/vehicles/1" for 127.0.0.1 at 2017-10-15 10:56:12 +0200
+Processing by VehiclesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Vehicle Load (0.0ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicles/show.html.erb within layouts/application
+  [1m[36mVehicleItem Load (21.4ms)[0m  [1m[34mSELECT "vehicle_items".* FROM "vehicle_items" WHERE "vehicle_items"."vehicle_id" = $1[0m  [["vehicle_id", 1]]
+  [1m[36mItem Load (63.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 58], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 59], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 60], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 62], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 87], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 88], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 93], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 94], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 101], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 102], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 103], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 106], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 107], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 108], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 110], ["LIMIT", 1]]
+  Rendered vehicles/show.html.erb within layouts/application (260.4ms)
+Completed 200 OK in 373ms (Views: 195.3ms | ActiveRecord: 109.3ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 10:56:26 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 10:57:01 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1812ms (Views: 1810.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 10:57:54 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 10:57:59 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 10:58:26 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1835ms (Views: 1834.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 10:58:40 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 10:58:59 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 53ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 10:59:55 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:00:30 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:00:39 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:02:44 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2327ms (Views: 2326.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:03:10 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:03:40 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2003ms (Views: 2001.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:03:52 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 443ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...ackground-color": expected ";", was ": green;"):
+    4:     <title>AmbuWdmh</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:     <script src="https://use.fontawesome.com/84dbc16103.js"></script>
+   10:   </head>
+  
+app/assets/stylesheets/pages/_vehicle-items#new.scss:4
+app/assets/stylesheets/pages/index.scss:2
+app/assets/stylesheets/application.scss:7
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___4068826515219069980_70140016201640'
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:03:57 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1954ms (Views: 1953.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:04:25 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2040ms (Views: 2038.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:04:57 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1913ms (Views: 1912.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:05:08 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1952ms (Views: 1950.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:06:07 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1927ms (Views: 1926.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:06:21 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1998ms (Views: 1997.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:06:30 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1962ms (Views: 1961.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:06:49 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1998ms (Views: 1996.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:07:04 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1848ms (Views: 1846.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:07:19 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2014ms (Views: 2013.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:07:25 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1935ms (Views: 1934.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:07:35 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2012ms (Views: 2010.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:07:42 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1946ms (Views: 1944.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:07:49 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1936ms (Views: 1934.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:08:00 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1908ms (Views: 1906.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:08:22 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2011ms (Views: 2010.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:08:39 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1908ms (Views: 1907.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:08:49 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2010ms (Views: 2009.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:08:57 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1908ms (Views: 1907.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:09:44 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2070ms (Views: 2069.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:09:52 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2067ms (Views: 2066.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:11:25 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2041ms (Views: 2040.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:12:37 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:13:08 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:13:16 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1990ms (Views: 1989.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:13:31 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1957ms (Views: 1956.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:14:06 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:14:26 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:15:03 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 56ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:15:38 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1991ms (Views: 1990.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:15:50 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:15:58 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:16:46 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2037ms (Views: 2035.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:16:56 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:17:55 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/mheos/code/Mheaus/rails-projects/Ambulance-WDMH/app/views/vehicle_items/new.html.erb:17: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+er", vehicle_items_path class: "btn btn-success btn-lg"  );@
+                              ^):
+  
+app/views/vehicle_items/new.html.erb:17: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:18:05 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (190.0ms)
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `vehicle_items_path' for #<#<Class:0x007f957f4f3c80>:0x007f9588a85d70>
+Did you mean?  vehicles_path):
+    14:       <button class="btn btn-primary mt-5 text-center" id="scanner"><i class="fa fa-camera" aria-hidden="true"></i></button>
+    15:     </div>
+    16:     <div id="validate">
+    17:       <%= link_to "Valider", vehicle_items_path, class: "btn btn-success btn-lg"  %>
+    18:     </div>
+    19:   </div>
+    20: </section>
+  
+app/views/vehicle_items/new.html.erb:17:in `_app_views_vehicle_items_new_html_erb___90182050625450729_70140109796640'
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:18:24 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"vehicle_items", :vehicle_id=>nil}, missing required keys: [:vehicle_id]):
+    14:       <button class="btn btn-primary mt-5 text-center" id="scanner"><i class="fa fa-camera" aria-hidden="true"></i></button>
+    15:     </div>
+    16:     <div id="validate">
+    17:       <%= link_to "Valider", vehicle_vehicle_items_path(@vehicle), class: "btn btn-success btn-lg"  %>
+    18:     </div>
+    19:   </div>
+    20: </section>
+  
+app/views/vehicle_items/new.html.erb:17:in `_app_views_vehicle_items_new_html_erb___90182050625450729_70139977171800'
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:18:51 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"vehicle_items", :vehicle_id=>nil}, missing required keys: [:vehicle_id]):
+    14:       <button class="btn btn-primary mt-5 text-center" id="scanner"><i class="fa fa-camera" aria-hidden="true"></i></button>
+    15:     </div>
+    16:     <div id="validate">
+    17:       <%= link_to "Valider", vehicle_vehicle_items_path(@vehicle), class: "btn btn-success btn-lg"  %>
+    18:     </div>
+    19:   </div>
+    20: </section>
+  
+app/views/vehicle_items/new.html.erb:17:in `_app_views_vehicle_items_new_html_erb___90182050625450729_70139979370980'
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:19:04 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.6ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 99ms (Views: 48.4ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:19:29 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.7ms)
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:19:31 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.7ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2030ms (Views: 2021.9ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 2002ms (Views: 1999.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:19:36 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 2078ms (Views: 2076.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:20:05 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1877ms (Views: 1875.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:20:27 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 2016ms (Views: 2014.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:20:40 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1917ms (Views: 1915.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:20:46 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2034ms (Views: 2032.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:21:01 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:21:03 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2672ms (Views: 2670.0ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 2021ms (Views: 2019.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:22:18 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:22:40 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:22:42 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2065ms (Views: 2063.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:22:52 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1933ms (Views: 1928.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:22:58 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2010ms (Views: 2008.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:23:11 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2026ms (Views: 2023.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:23:19 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1992ms (Views: 1990.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:23:28 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2013ms (Views: 2011.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:23:49 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1875ms (Views: 1873.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:23:58 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2072ms (Views: 2070.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:24:13 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1955ms (Views: 1953.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:24:27 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1990ms (Views: 1987.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:24:51 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1984ms (Views: 1982.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:24:58 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2055ms (Views: 2053.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:25:13 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1969ms (Views: 1967.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:25:35 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4989ms (Views: 4987.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:26:30 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:26:39 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2183ms (Views: 2181.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:26:49 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2014ms (Views: 2010.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:27:35 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vehicles/1/vehicle_items" for 127.0.0.1 at 2017-10-15 11:27:37 +0200
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for VehicleItemsController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:27:43 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:28:04 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (156.2ms)
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `vehicle_vpath' for #<#<Class:0x007f957d85b8e8>:0x007f95749554a0>
+Did you mean?  vehicle_path
+               vehicles_path):
+    14:       <button class="btn btn-primary text-center" id="scanner"><i class="fa fa-camera" aria-hidden="true"></i></button>
+    15:     </div>
+    16:     <div class="col-12" id="validate">
+    17:       <%= link_to "Retour", vehicle_vpath(@vehicle), class: "btn btn-success"  %>
+    18:     </div>
+    19:   </div>
+    20: </section>
+  
+app/views/vehicle_items/new.html.erb:17:in `_app_views_vehicle_items_new_html_erb___90182050625450729_70139941421220'
+Started GET "/vehicles/1/vehicle_items/new" for 127.0.0.1 at 2017-10-15 11:28:07 +0200
+Processing by VehicleItemsController#new as HTML
+  Parameters: {"vehicle_id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicle_items/new.html.erb within layouts/application
+  Rendered vehicle_items/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vehicles/1" for 127.0.0.1 at 2017-10-15 11:28:09 +0200
+Processing by VehiclesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Vehicle Load (0.0ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vehicles/show.html.erb within layouts/application
+  [1m[36mVehicleItem Load (0.4ms)[0m  [1m[34mSELECT "vehicle_items".* FROM "vehicle_items" WHERE "vehicle_items"."vehicle_id" = $1[0m  [["vehicle_id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 58], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 59], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 60], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 62], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 87], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 88], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 93], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 94], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 101], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 102], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 103], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 106], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 107], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 108], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 110], ["LIMIT", 1]]
+  Rendered vehicles/show.html.erb within layouts/application (195.5ms)
+Completed 200 OK in 267ms (Views: 134.7ms | ActiveRecord: 97.5ms)
+
+

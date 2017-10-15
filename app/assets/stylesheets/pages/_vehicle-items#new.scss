@@ -1,0 +1,40 @@
+.new-v-item {
+  #cameraStream {
+    height: 60vh;
+    width: 100%;
+    max-width: 95vw;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 5px 5px 32px 5px #CCC;
+    z-index: 2;
+    video{
+      margin-left: -30%;
+      width: auto !important;
+      height: 100%;
+    }
+    canvas{
+      display:none;
+    }
+  }
+  #scanner {
+    margin-top: 5%;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+  }
+  #validate {
+    height: 100%;
+    padding: 5% 30%;
+    text-align: center;
+    .btn {
+      height: 3rem;
+      width: 100%;
+      border-radius: 100px;
+      background-color: #73B650;
+      font-size: 1.5em;
+      box-shadow: 3px 15px 90px -30px #C4E6B2;
+    }
+  }
+}
+
