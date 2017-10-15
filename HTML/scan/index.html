@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<!-- Customs -->	
+	<link rel="stylesheet" href="styles.css" >
+	<script src="lib\quagga.min.js"></script>
+</head>
+
+<body>
+	<div class="top">Scan</div>
+
+	<section class="container">
+		<div class="row">
+		  <div class="col-12 text-center mt-5">
+			<div id='cameraStream'></div>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-12 center">
+			<button id="scan" type="button" class="btn btn-success btn-circle btn-xl btn-shadow"><i class="glyphicon glyphicon-camera"></i></button>
+		  </div>
+		</div>
+	</section>
+	<div class="bottom">
+	  <div class="center"><button id="return" type="button" class="btn btn-default btn-lg btn-shadow">Retour</button>
+	  </div>
+	</div>
+	
+	<script src="scripts.js"></script>
+</body>
+</html>
